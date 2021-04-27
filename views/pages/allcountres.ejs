@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/country.css">
+</head>
+
+<body>
+    <main>
+        
+            <% array.forEach(element => { %> 
+                <div>
+                <h2>country : <%=element.country %> </h2>
+                <br>
+                <br>
+
+                <h2>totalconfirmedcases: <%=element.totalconfirmedcases %></h2>
+                <br>
+                <h2>totalteaths :<%=element.totalteaths %></h2>
+                <br>
+                <h2>totalrecovered :<%=element.totalrecovered %></h2>
+                <br>
+                <h2>date :<%=element.date %></h2>
+                <form action="/record">
+                    <input type="hidden" name="country" value="<%=element.country %>">
+                    <input type="hidden" name="totalconfirmedcases" value="<%=element.totalconfirmedcases %>">
+                    <input type="hidden" name="totalteaths" value="<%=element.totalteaths %>">
+                    <input type="hidden" name="totalrecovered" value="<%=element.totalrecovered %>">
+                    <input type="hidden" name="date" value="<%=element.date %>">
+                    <button>add to my records</button>
+                </form>
+            </div>
+           <% }) %> 
+        
+    </main>
+</body>
+</html>

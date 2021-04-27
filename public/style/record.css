@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    border: solid;
+    margin: 20px;
+    padding: 60px;
+    align-items: center;
+    border-radius: 50px;
+    margin-left: 350px;
+    background-color: rgb(23, 221, 23);
+}
+body
+{
+    background-color: rgb(231, 177, 76);
+}

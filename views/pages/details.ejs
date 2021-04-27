@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/details.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h2>country : <%=recordarray.country %> </h2>
+            <br>
+            <br>
+    
+            <h2>totalconfirmedcases: <%=recordarray.totalconfirmedcases %></h2>
+            <br>
+            <h2>totalteaths :<%=recordarray.totalteaths %></h2>
+            <br>
+            <h2>totalrecovered :<%=recordarray.totalrecovered %></h2>
+            <br>
+            <h2>date : <%=recordarray.date %> </h2>
+
+                    <section>
+                        <button id="update">UPDATE</button>
+                        <form action="/update/<%=recordarray.id %>" id="form">
+                            <input type="text" name="country" value="<%=recordarray.country %>">
+                            <input type="text" name="totalconfirmedcases" value="<%=recordarray.totalconfirmedcases %>">
+                            <input type="text" name="totalteaths" value="<%=recordarray.totalteaths %>">
+                            <input type="text" name="totalrecovered" value="<%=recordarray.totalrecovered %>">
+                            <input type="text" name="date" value="<%=recordarray.date %>">
+                            <button>update info</button>
+                        
+                        </form>
+                    </section>
+
+                    <section>
+                        <form action="/delete/<%=recordarray.id %>">
+                        <button>DELETE</button>
+                    </form>
+                    </section>
+
+
+            </div>
+    </main>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/js/app.js"></script>
+    
+</body>
+</html>

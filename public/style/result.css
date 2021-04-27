@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2%;
+   */
+
+
+  
+}
+div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    border: solid;
+    margin: 20px;
+    padding: 60px;
+    align-items: center;
+    border-radius: 50px;
+    margin-left: 350px;
+    background-color: aqua;
+}
+body
+{
+    background-color: rgb(4, 134, 91);
+}
